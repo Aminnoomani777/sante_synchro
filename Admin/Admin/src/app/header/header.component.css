@@ -1,0 +1,54 @@
+.notification-nav {
+  position: relative;
+  margin-right: 15px;
+}
+
+.notification-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff4d4f;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 350px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  z-index: 1000;
+  display: none;
+}
+
+.notification-nav:hover .notification-menu {
+  display: block;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-item:hover {
+  background: #f9f9f9;
+}
+
+.notification-time {
+  font-size: 12px;
+  color: #888;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from admin.pixelstrap.net/admiro/template/datatable-basic-init.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 09:56:54 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admiro admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <title>Admiro - Premium Admin Template</title>
+    <!-- Favicon icon-->
+    
+  </head>
+  <body>
+    <app-header></app-header>
+    <app-menu></app-menu>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i class="iconly-Arrow-Up icli"></i></div>
+    <!-- tap on tap ends-->
+    <!-- loader-->
+    <div class="loader-wrapper">
+      <div class="loader"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+     
+      <div class="page-body-wrapper"> 
+        <!-- Page sidebar start-->
+       
+       
+        <!-- Page sidebar end-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-sm-6 col-12">
+                  <h2>Basic DataTables</h2>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+         
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Zero Configuration  Starts-->
+              <div class="col-sm-12">
+                <div class="card">
+                 
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="display" id="basic-1">
+                        <thead>
+                          <tr>
+                            <th>id</th>
+                            <th>nom</th>
+                            <th>prenom</th>
+                            <th>email</th>
+                            <th>role </th>
+                            <th *ngIf="role=='superadmin'">action</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody   >
+                          <tr  *ngFor="let admin of listAdmin">
+                            <td>{{admin.id}}</td>
+                            <td>{{admin.nom}}</td>
+                            <td>{{admin.prenom}}</td>
+                            <td>{{admin.email}}</td>
+                            <td>{{admin.role}}</td>
+                            <td    *ngIf="role=='superadmin'">
+                             
+                              <a href="/modifieradmin/{{admin.id}}" type="submit" class="btn btn-sm rounded-pill px-3" 
+                                      style="background-color: #56A29D; color: white; border: none;">
+                                  <i class="fas fa-edit"></i> Modifier
+                            </a>
+                          
+                              <button (click)="DeleteAdmin(admin)" type="button" class="btn btn-danger btn-sm rounded-pill px-3 ms-2">
+                                  <i class="fas fa-trash"></i> Supprimer
+                              </button>
+                          </td>
+                          
+                          
+                              <ul class="action"> 
+                                <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
+                                <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
+                              </ul>
+                          
+                          </tr>
+                        
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Zero Configuration  Ends-->
+              <!-- Complex headers (rowspan and colspan) Starts-->
+              
+              <!-- Complex headers (rowspan and colspan) Ends-->
+              <!-- State saving Starts-->
+              
+              <!-- State saving Ends-->
+              <!-- Scroll - vertical dynamic Starts-->
+             
+              <!-- Scroll - vertical dynamic Ends-->
+              <!-- Container-fluid Ends-->
+            </div>
+          </div>
+        </div>
+       <app-footer></app-footer>
+      </div>
+    </div>
+  
+  </body>
+
+<!-- Mirrored from admin.pixelstrap.net/admiro/template/datatable-basic-init.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 09:56:54 GMT -->
+</html>

@@ -1,0 +1,51 @@
+<header class="main-header">
+    <div class="header-top">
+      <div class="container clearfix">
+        <div class="top-left pull-left clearfix">
+          <div class="phone pull-left"><a href="#"><i class="fa fa-phone"></i>123 1234 123</a></div>
+          <div class="email pull-left"><a href="mailto:Fetness@yourdomain.com"><i class="fa fa-envelope-o"></i>
+              Fitnessyourdomain.com</a></div>
+        </div>
+        <div class="top-right pull-right clearfix">
+          <div class="social"><a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a><a
+              class="fa fa-instagram" href="#"></a> <a class="fa fa-google-plus" href="#"></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="header-lower">
+      <div class="container clearfix">
+        <nav class="navbar navbar-expand-lg main-menu">
+          <div class="container-fluid">
+            <div class="logo pull-left"><a href="index.html">
+                <h2 class="logo_name">GYM <span class="white_text">FIT </span> </h2>
+              </a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="nav navbar-nav navbar-right ms-auto" id="onenav">
+                <li class="nav-link current"><a href="" class="js-scroll-trigger">Accueil</a> </li>
+                <li class="nav-link"><a href="about" class="js-scroll-trigger"> A Propos</a> </li>
+                <li *ngIf="IsSalleIn" class="nav-link"><a href="ajouterpack" class="js-scroll-trigger">Ajouter Pack</a></li>
+                <li class="nav-link"><a href="listpack" class="js-scroll-trigger">pack</a></li>
+                <li class="nav-link"><a href="contact" class="js-scroll-trigger">contact</a></li>
+                <li  *ngIf="!IsCoachIn && !IsSalleIn && !IsClientIn" class="nav-link"><a href="choix" class="js-scroll-trigger">Connexion</a></li>
+                <li *ngIf="IsCoachIn || IsSalleIn || IsClientIn" class="nav-link"><a (click)="logout()" class="js-scroll-trigger">DeConnexion</a></li>
+                <li class="search-btn" onclick="openSearch()"><a><i class="fa fa-search"></i></a></li>
+              </ul>
+              <div class="clearfix"></div> 
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="myOverlay" class="overlay"> <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form>
+            <input type="text" placeholder="Enter your keywords..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>

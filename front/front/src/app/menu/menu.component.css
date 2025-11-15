@@ -1,0 +1,30 @@
+
+  
+  .custom-select {
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding-right: 1.5em; /* Espace pour la flèche */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .custom-select option[disabled][selected] {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  /* Style pour la flèche du select */
+  .custom-select-container::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.8em;
+  }

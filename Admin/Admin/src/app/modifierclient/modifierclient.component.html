@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  
+<!-- Mirrored from admin.pixelstrap.net/admiro/template/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 09:56:44 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admiro admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <title>Admiro - Premium Admin Template</title>
+   
+  </head>
+  <body>
+    <app-header></app-header>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i class="iconly-Arrow-Up icli"></i></div>
+    <!-- tap on tap ends-->
+    <!-- loader-->
+    <div class="loader-wrapper">
+      <div class="loader"><span>
+
+      </span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-wrapper compact-wrapper" id="pageWrapper"> 
+     
+   
+      <div class="page-body-wrapper">
+        <!-- Page sidebar start-->
+        
+       <app-menu></app-menu>
+        <!-- Page sidebar end-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                
+               
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="card">
+                  <div class="card-header card-no-border pb-0">
+                    <h3>ModifierClient</h3>
+                    
+                  </div>
+                  <div class="card-body basic-wizard important-validation">
+                   
+                    <div id="msform">
+                      <form (ngSubmit)="updateClient()" [formGroup]="clientForm" class="stepper-one row g-3 needs-validation custom-input" novalidate="">
+                        <div class="col-12">       
+                          <label class="form-label" for="email-basic-wizard">nom <span class="text-danger">*</span></label>
+                          <input class="form-control" id="email-basic-wizard" type="text" required="" placeholder="nom"
+                          formControlName="nom">
+                          
+                          
+                        </div>
+                        
+                        <div class="col-12">
+                          <label class="col-sm-12 form-label" for="passwordwizard888">prenom<span class="text-danger">*</span></label>
+                          <input class="form-control" id="passwordwizard888" type="text" placeholder="prenom" required=""
+                          formControlName="prenom">
+                        
+                        </div>
+                        <div class="col-12">
+                          <label class="col-sm-12 form-label" for="confirmpasswordwizard">email <span class="text-danger">*</span></label>
+                          <input class="form-control" id="confirmpasswordwizard" type="email" placeholder="email" required=""
+                          formControlName="email">
+                        
+                        </div>
+                        <div class="col-md-12"> 
+                          <label class="form-label" for="placeholdername">mot de passe  </label>
+                          <input class="form-control" id="placeholdername" type="password" required="" placeholder="mot de pass"
+                          formControlName="mp">
+                        </div>
+                        <div class="col-md-12"> 
+                            <label class="form-label" for="placeholdername">telephone  </label>
+                            <input class="form-control" id="placeholdername" type="number" required="" placeholder="mot de pass"
+                            formControlName="telephone">
+                          </div>
+                          <div class="col-md-12"> 
+                            <label class="form-label" for="placeholdername">age </label>
+                            <input class="form-control" id="placeholdername" type="number" required="" placeholder="mot de pass"
+                            formControlName="age">
+                          </div>
+                          
+                       
+                        <span [innerHTML]="this.messageCommande"></span>
+                        <button type="submit" class="btn btn-success"  style="background-color: #56A29D; color: white; border: none;">Modifier</button>
+                       
+                      </form>
+                     
+                      
+                      
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+             
+             
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  
+  </body>
+
+  
+
+<!-- Mirrored from admin.pixelstrap.net/admiro/template/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2025 09:56:47 GMT -->
+</html>

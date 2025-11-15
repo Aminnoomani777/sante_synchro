@@ -1,0 +1,33 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">ajout categorie</h2>
+                <p class="text-white-50 mb-5">Please enter your details to create an account!</p>
+  
+              
+                        <form (ngSubmit)="addNewCategorie()"  [formGroup]="categorieForm" class="stepper-one row g-3 needs-validation custom-input" novalidate="">
+                          <div class="col-12">       
+                            <label class="form-label" >nom <span class="text-danger">*</span></label>
+                            <input class="form-control" id="email-basic-wizard" type="text" required="" placeholder="nom"
+                            formControlName="nom">
+                            <div *ngIf="nom?.invalid && (nom?.dirty || nom?.touched)" class="text-danger">
+                              <small *ngIf="nom?.errors?.['required']">Le nom est requis.</small>
+                              <small *ngIf="nom?.errors?.['minlength']">Le nom doit contenir au moins 3 caracteres.</small>
+                            </div>
+                            
+                          <span [innerHTML]="messageCommande"></span>
+
+                        <button type="submit" class="btn btn-primary">Ajouter</button>
+  
+              <div>
+                <p class="mb-0">Already have an account? <a href="#!" class="text-white-50 fw-bold">Login</a></p>
+              </div>
+  
+          
+       

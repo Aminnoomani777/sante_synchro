@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PowerZone - Fitness, Workout & Gym HTML Template</title>
+
+    <style>
+        body {
+            background: #f0f4f8;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-inner {
+            position: relative;
+            padding: 50px 0;
+            background: #6CB342;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Card styling */
+        .pricingtable-wrapper {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid #6CB342; /* Updated to green */
+        }
+
+        .pricingtable-wrapper:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricingtable-inner {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pricingtable-title {
+            font-size: 1.5rem;
+            color: #6CB342; /* Updated to green */
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .pricingtable-price {
+            position: relative;
+            padding: 20px;
+            color: #fff; /* White text for contrast on green */
+            background: linear-gradient(135deg, rgba(108, 179, 66, 0.6), rgba(108, 179, 66, 0.4)); /* Updated to green */
+            border-radius: 10px 10px 0 0;
+        }
+
+        .pricingtable-photo {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .pricingtable-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pricingtable-bx {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff; /* White text for contrast on green */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .pricingtable-bx small {
+            font-size: 1rem;
+            color: #fff; /* White text for contrast on green */
+        }
+
+        .pricingtable-price p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            color: #fff; /* White text for contrast on green */
+        }
+
+        .pricingtable-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .pricingtable-features li {
+            font-size: 1rem;
+            color: #34495e;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .pricingtable-features li:before {
+            content: '•';
+            color: #6CB342; /* Updated to green */
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .pricingtable-footer .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #6CB342; /* Updated to green */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .pricingtable-footer .btn:hover {
+            background: #5a9e3e; /* Darker green shade for hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .pricingtable-wrapper {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-content" style="background: #fff;">
+        <section class="content-inner section-wrapper2">
+            <div class="container">
+                <div class="text-center m-b30">
+                    <h3 class="title m-b20">Sélectionnez votre profil pour accéder à votre espace</h3>
+                </div>
+
+                <div class="row justify-content-center">
+                    <!-- Coach Card -->
+                    <div class="col-lg-4 col-md-6 m-b30">
+                        <div class="pricingtable-wrapper style-1">
+                            <div class="pricingtable-inner">
+                                <div class="pricingtable-title premium">Coach</div>
+                                <div class="pricingtable-price">
+                                    <div class="pricingtable-photo">
+                                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Coach">
+                                    </div>
+                                    <h2 class="pricingtable-bx text-primary">Coach<small>/ Connexion</small></h2>
+                                    <p class="m-0">Votre hub de coaching personnalisé</p>
+                                </div>
+                                <ul class="pricingtable-features">
+                                    <li>Découvrez vos clients</li>
+                                    <li>Créez des programmes sur mesure et suivez leurs progrès</li>
+                                </ul>
+                                <div class="pricingtable-footer">
+                                    <a href="/loginentraineur" class="btn btn-primary rounded-0 d-block btn-hover-1"><span>Connectez-vous</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Card -->
+                    <div class="col-lg-4 col-md-6 m-b30">
+                        <div class="pricingtable-wrapper style-1">
+                            <div class="pricingtable-inner">
+                                <div class="pricingtable-title premium">Client</div>
+                                <div class="pricingtable-price">
+                                    <div class="pricingtable-photo">
+                                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Client">
+                                    </div>
+                                    <h2 class="pricingtable-bx text-primary">Client<small>/ Connexion</small></h2>
+                                    <p class="m-0">Entrez dans votre monde de fitness personnalisé</p>
+                                </div>
+                                <ul class="pricingtable-features">
+                                    <li>Accédez à vos plans de fitness personnalisés</li>
+                                    <li>Bénéficiez de conseils en temps réel de votre coach personnel</li>
+                                </ul>
+                                <div class="pricingtable-footer">
+                                    <a href="/loginclient" class="btn btn-primary rounded-0 d-block btn-hover-1"><span>Connectez-vous</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Salle de Sport Card -->
+                    <div class="col-lg-4 col-md-6 m-b30">
+                        <div class="pricingtable-wrapper style-1">
+                            <div class="pricingtable-inner">
+                                <div class="pricingtable-title premium">Salle de Sport</div>
+                                <div class="pricingtable-price">
+                                    <div class="pricingtable-photo">
+                                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Salle de Sport">
+                                    </div>
+                                    <h2 class="pricingtable-bx text-primary">Salle<small>/ Connexion</small></h2>
+                                    <p class="m-0">Votre centre de commandement pour tous les aspects de votre salle</p>
+                                </div>
+                                <ul class="pricingtable-features">
+                                    <li>Gérez les plannings des cours</li>
+                                    <li>Visualisez les inscriptions des membres</li>
+                                </ul>
+                                <div class="pricingtable-footer">
+                                    <a href="/loginsalledesport" class="btn btn-primary rounded-0 d-block btn-hover-1"><span>Connectez-vous</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

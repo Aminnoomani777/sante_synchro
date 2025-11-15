@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admiro admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Admiro admin template, best javascript admin, dashboard template, bootstrap admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <title>Admiro - Premium Admin Template</title>
+  </head>
+  <body>
+    <app-header></app-header>
+    <app-menu></app-menu>
+    <div class="tap-top"><i class="iconly-Arrow-Up icli"></i></div>
+    <div class="loader-wrapper">
+      <div class="loader"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <div class="page-body-wrapper">
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-sm-6 col-12">
+                  <h2>Basic DataTables</h2>
+                </div>
+                <div class="col-sm-6 col-12">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli svg-color"></i></a></li>
+                    <li class="breadcrumb-item">Data Tables</li>
+                    <li class="breadcrumb-item active">Basic DataTables</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="display" id="basic-1">
+                        <thead>
+                          <tr>
+                            <th>id</th>
+                            <th>nom</th>
+                            <th>prenom</th>
+                            <th>email</th>
+                        
+                            <th>telephone</th>
+                           
+                            
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let entarineur of listEntraineur">
+                            <td>{{entarineur.id}}</td>
+                            <td>{{entarineur.nom}}</td>
+                            <td>{{entarineur.prenom}}</td>
+                            <td>{{entarineur.email}}</td>
+                           
+                            <td>{{entarineur.telephone}}</td>
+                            
+                           
+                           
+                          
+                          
+                            <td>
+                              <a href="/modifierentraineur/{{entarineur.id}}" type="submit" class="btn btn-sm rounded-pill px-3" 
+                                      style="background-color: #56A29D; color: white; border: none;">
+                                  <i class="fas fa-edit"></i> Modifier
+                            </a>
+                              <button (click)="DeleteEntraineur(entarineur)" type="button" class="btn btn-danger btn-sm rounded-pill px-3 ms-2">
+                                  <i class="fas fa-trash"></i> Supprimer
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </body>
+</html>
